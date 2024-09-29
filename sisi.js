@@ -3,7 +3,7 @@
 
     var Defined = {
       use_api: 'lampac',
-      localhost: '{localhost}',
+      localhost: 'pgapon.github.io',
       vip_site: '',
       framework: ''
     };
