@@ -846,7 +846,7 @@
 
     if (!window['plugin_sisi_' + Defined.use_api + '_ready']) {
       startPlugin();
-      
+      /*
       if(Defined.use_api == 'pwa'){
           let s = document.createElement('script')
               s.onload = function(){
@@ -863,7 +863,7 @@
               document.body.appendChild(s)
       }
       else startPlugin()
-      
+      */
     }
 
 })();
