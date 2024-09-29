@@ -307,7 +307,7 @@
         }
 
         var unic_id = Lampa.Storage.get('sisi_unic_id', '');
-        var email = Lampa.Storage.get('account', {}).email;
+        var email = Lampa.Storage.get('account', {}).email || Lampa.Storage.get('lampac_unic_id', '');
         if (u.indexOf('box_mac=') == -1) u = Lampa.Utils.addUrlComponent(u, 'box_mac=' + unic_id);else u = u.replace(/box_mac=[^&]+/, 'box_mac=' + unic_id);
 
         if (email) {
@@ -451,7 +451,7 @@
       this.account = function (u) {
         if (Defined.use_api == 'lampac' && u.indexOf(Defined.localhost.replace('/sisi', '')) == -1 && window.location.hostname !== 'localhost') return u;
         var unic_id = Lampa.Storage.get('sisi_unic_id', '');
-        var email = Lampa.Storage.get('account', {}).email;
+        var email = Lampa.Storage.get('account', {}).email || Lampa.Storage.get('lampac_unic_id', '');
         if (u.indexOf('box_mac=') == -1) u = Lampa.Utils.addUrlComponent(u, 'box_mac=' + unic_id);else u = u.replace(/box_mac=[^&]+/, 'box_mac=' + unic_id);
 
         if (email) {
