@@ -3,7 +3,7 @@
 
     var Defined = {
       use_api: 'lampac',
-      localhost: 'pgapon.github.io',
+      localhost: 'https://pgapon.github.io/sisi.js',
       vip_site: '',
       framework: ''
     };
