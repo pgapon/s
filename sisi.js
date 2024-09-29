@@ -3,7 +3,7 @@
 
     var Defined = {
       use_api: 'lampac',
-      localhost: 'https://lampa.mx',
+      localhost: 'localhost',
       vip_site: '',
       framework: ''
     };
